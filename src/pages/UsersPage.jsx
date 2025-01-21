@@ -12,7 +12,7 @@ const userStats = {
 	totalUsers: 152845,
 	newUsersToday: 243,
 	activeUsers: 98520,
-	churnRate: "2.4%",
+	churnRate: "100",
 };
 
 const UsersPage = () => {
@@ -41,7 +41,7 @@ const UsersPage = () => {
 						value={userStats.activeUsers.toLocaleString()}
 						color='#F59E0B'
 					/>
-					<StatCard name='Churn Rate' icon={UserX} value={userStats.churnRate} color='#EF4444' />
+					<StatCard name='Premium Users' icon={UserX} value={userStats.churnRate} color='#EF4444' />
 				</motion.div>
 
 				<UsersTable />
